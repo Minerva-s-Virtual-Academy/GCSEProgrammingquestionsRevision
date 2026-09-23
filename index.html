@@ -1,36 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exam Programming Guide & Interactive Parsons Practice</title>
+  <title>Python Practical Exam Revision Guide</title>
 </head>
 <body style="font-family: Arial, sans-serif; margin: 0; padding: 15px; background-color: #f8f9fa; color: #212529;">
 
-  <!-- CANVAS MAIN CONTAINER TABLE (Borderless, Max Width 1300px) -->
+  <!-- CANVAS MAIN CONTAINER TABLE (Strict 2-Column Table Engine to Prevent Canvas Strip/Layout Breakage) -->
   <table style="width: 100%; max-width: 1300px; border-collapse: collapse; margin: 0 auto; border: none; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <tr style="vertical-align: top;">
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exam Programming Guide & Practice</title>
-</head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 15px; background-color: #f8f9fa; color: #212529;">
-
-  <!-- CANVAS MAIN CONTAINER TABLE (Borderless, Max Width 1300px) -->
-  <table style="width: 100%; max-width: 1300px; border-collapse: collapse; margin: 0 auto; border: none; background-color: #ffffff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
-    <tr style="vertical-align: top;">
+    <tr>
       
-      <!-- LEFT COLUMN: PERSISTENT MEMORY SCAFFOLD (280px) -->
-      <td style="width: 280px; min-width: 280px; background-color: #f1f3f5; padding: 15px; border-right: 2px solid #dee2e6;">
+      <!-- LEFT COLUMN: PERSISTENT MEMORY SCAFFOLD (280px Fixed Width) -->
+      <td style="width: 280px; min-width: 280px; max-width: 280px; vertical-align: top; background-color: #f1f3f5; padding: 15px; border-right: 2px solid #dee2e6;">
         
         <h3 style="margin-top: 0; color: #1a202c; font-size: 1.1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px;">
           🧠 Memory Scaffold
         </h3>
         <p style="font-size: 0.85rem; color: #475569; margin-bottom: 15px;">
-          Expand accordion panels below for essential Python exam concepts and strategies.
+          Expand accordion panels below for key Python exam concepts and step-by-step strategies.
         </p>
 
         <!-- ACCORDION 1: Variables & Constants -->
@@ -39,58 +27,58 @@
             📌 Variables vs Constants
           </summary>
           <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong>Variables:</strong> Values that change during execution.</p>
+            <p style="margin: 4px 0;"><strong>Variables:</strong> Values that change during runtime[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #3b82f6;"><code>subtotal = 0</code><br><code>booster = 1</code></p>
-            <p style="margin: 4px 0;"><strong>Constants:</strong> Fixed values written in ALL_CAPS.</p>
+            <p style="margin: 4px 0;"><strong>Constants:</strong> Fixed values written in <code>ALL_CAPS</code>[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #10b981;"><code>SIDES = 6</code><br><code>HEXDIV = 16</code></p>
           </div>
         </details>
 
-        <!-- ACCORDION 2: Selection & Relational Logic -->
+        <!-- ACCORDION 2: Selection & Logic -->
         <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
           <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
             🔀 Selection & Range Validation
           </summary>
           <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong>Range Checking:</strong> Use <code>and</code> to test bounds.</p>
+            <p style="margin: 4px 0;"><strong>Range Checking:</strong> Use <code>and</code> to check both lower and upper bounds[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #8b5cf6;">
               <code>if val >= 0 and val <= 255:</code>
             </p>
-            <p style="margin: 4px 0;"><strong>Logical OR:</strong> True if either condition matches.</p>
+            <p style="margin: 4px 0;"><strong>Logical OR:</strong> Evaluates to true if either condition is met[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #f59e0b;">
               <code>if roll == 3 or roll == 6:</code>
             </p>
           </div>
         </details>
 
-        <!-- ACCORDION 3: Type Casting & Subprograms -->
+        <!-- ACCORDION 3: Casting & Subprograms -->
         <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
           <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
-            🛠️ Type Casting & Subprograms
+            🛠️ Casting & Subprograms
           </summary>
           <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong>Type Casting:</strong> <code>input()</code> returns a string. Convert using <code>int()</code>.</p>
+            <p style="margin: 4px 0;"><strong>Type Casting:</strong> Keyboard input is a string[cite: 1]. Wrap with <code>int()</code> for numbers[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #06b6d4;">
               <code>num = int(input(...))</code>
             </p>
-            <p style="margin: 4px 0;"><strong>Function Call:</strong> Pass variables as arguments.</p>
+            <p style="margin: 4px 0;"><strong>Subprogram Call:</strong> Pass the variable name into the parameter brackets[cite: 1].</p>
             <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #ec4899;">
-              <code>result = getHex(userInput)</code>
+              <code>getHex(userInput)</code>
             </p>
           </div>
         </details>
 
-        <!-- ACCORDION 4: 4-Step Exam Strategy -->
+        <!-- ACCORDION 4: Exam Strategy -->
         <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
           <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
             🎯 Parsons & Completion Strategy
           </summary>
           <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
             <ol style="padding-left: 18px; margin: 4px 0;">
-              <li><strong>Imports & Constants:</strong> Always put library imports and CONSTANTS at the top.</li>
-              <li><strong>Initialise:</strong> Set starting variable states before loops.</li>
-              <li><strong>Indentation:</strong> Verify code blocks inside <code>for</code> / <code>if</code> statements.</li>
-              <li><strong>Subprogram Calls:</strong> Ensure arguments match function definitions.</li>
+              <li><strong>Top Level:</strong> Always place <code>import</code> modules and <code>CONSTANTS</code> at the very top.</li>
+              <li><strong>Initialise:</strong> Set starting variables to <code>0</code> or <code>1</code> before loop blocks.</li>
+              <li><strong>Indentation:</strong> Check 4-space indentation for code inside <code>for</code> loops and <code>if</code> statements.</li>
+              <li><strong>No Extra Functions:</strong> Follow instructions and do not add extra code outside requirements[cite: 1].</li>
             </ol>
           </div>
         </details>
@@ -98,173 +86,271 @@
       </td>
 
       <!-- RIGHT COLUMN: MAIN CONTENT AREA -->
-      <td style="padding: 20px;">
+      <td style="vertical-align: top; padding: 20px;">
 
         <!-- AI ACTIVITY STRAND BADGE & CALLOUT (ENHANCE - SUPPORT BLUE) -->
         <div style="border: 2px solid #007BA6; background-color: #eef7fa; border-radius: 8px; padding: 15px; margin-bottom: 25px;">
           <table style="width: 100%; border-collapse: collapse; border: none;">
-            <tr style="vertical-align: middle;">
-              <td style="width: 140px; padding-right: 15px;">
+            <tr>
+              <td style="width: 140px; padding-right: 15px; vertical-align: middle;">
                 <img src="https://lh3.googleusercontent.com/d/1inI2pCLZ_pb0orhwcBeAN73oqpEfvagH" alt="ENHANCE AI Strand Badge" style="width: 130px; height: auto; display: block;">
               </td>
-              <td>
+              <td style="vertical-align: middle;">
                 <h2 style="margin: 0 0 5px 0; color: #007BA6; font-size: 1.25rem;">AI Activity Strand: ENHANCE (AI Supported)</h2>
                 <p style="margin: 0; font-size: 0.9rem; color: #004d66; line-height: 1.4;">
-                  <strong>Student Task Guidance:</strong> Use AI as an interactive tutor to examine Parsons structures, practice input validation syntax, and test program logic against exam criteria.
+                  <strong>Student Task Guidance:</strong> Use this page to revise how practical exam questions are framed. Study the paper questions, complete the missing skeleton segments, and assemble the Parsons code blocks. Use AI as a tutor to check your logic.
                 </p>
               </td>
             </tr>
           </table>
         </div>
 
-        <!-- ACTIVITY 1: Q04c PARSONS CHALLENGE (WITH CONSTANTS) -->
-        <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 0;">
-          🧩 Task 1: Q04c Dice Game Parsons Problem
-        </h2>
-        <p style="font-size: 0.9rem; color: #475569;">
-          Click or drag code blocks into the correct sequence, starting with imports, constants, and initialisation.
-        </p>
+        <h1 style="color: #0f172a; margin-top: 0; font-size: 1.6rem; border-bottom: 3px solid #007BA6; padding-bottom: 8px;">
+          Python Practical Exam Revision Guide: Question Analysis & Practice
+        </h1>
 
-        <!-- PARSONS DRAG & DROP CONTAINER -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
-          <tr>
-            <td style="width: 48%; vertical-align: top; background: #f1f5f9; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
-              <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #334155; text-align: center;">📦 Available Code Blocks</h4>
-              <div id="source-blocks-q4" style="min-height: 360px;">
-                <div class="parsons-item-q4" draggable="true" data-id="1" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  import random
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="2" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  SIDES = 6<br>THROWS = 3
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="3" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  roll = 0<br>subtotal = 0<br>booster = 1<br>finalScore = 0
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="4" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  for i in range(THROWS):
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="5" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;roll = random.randint(1, SIDES)<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Rolled:", roll)
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="6" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;subtotal = subtotal + roll
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="7" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;if roll == 3 or roll == 6:
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="8" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booster = booster + 1
-                </div>
-                <div class="parsons-item-q4" draggable="true" data-id="9" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  finalScore = subtotal * booster<br>print("Score", finalScore)
-                </div>
-              </div>
-            </td>
-            <td style="width: 4%;"></td>
-            <td style="width: 48%; vertical-align: top; background: #e2e8f0; padding: 10px; border-radius: 6px; border: 2px dashed #64748b;">
-              <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #334155; text-align: center;">🎯 Your Solution Sequence</h4>
-              <div id="target-blocks-q4" style="min-height: 360px; background: #ffffff; border-radius: 4px; padding: 8px;"></div>
-            </td>
-          </tr>
-        </table>
+        <!-- SECTION 1: QUESTION 4(C) WALKTHROUGH -->
+        <div style="margin-bottom: 35px;">
+          <h2 style="color: #1e293b; background: #e2e8f0; padding: 8px 12px; border-radius: 4px; font-size: 1.2rem; margin-top: 0;">
+            📌 Section 1: Question 04(c) — Parsons Problem & Game Logic
+          </h2>
 
-        <div style="margin-bottom: 25px;">
-          <button onclick="checkParsonsQ4()" style="background-color: #007BA6; color: white; border: none; padding: 9px 16px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer;">
-            Check Sequence
-          </button>
-          <button onclick="resetParsonsQ4()" style="background-color: #64748b; color: white; border: none; padding: 9px 16px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer; margin-left: 8px;">
-            Reset Activity
-          </button>
+          <!-- EXAM QUESTION DISPLAY BOX -->
+          <div style="background-color: #fff8f1; border: 1px solid #f97316; border-left: 5px solid #ea580c; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #9a3412; font-size: 1rem;">📄 Actual Exam Question Specification: Question 04(c)[cite: 1]</h3>
+            <p style="font-size: 0.9rem; line-height: 1.5; color: #431407; margin-bottom: 8px;">
+              Eli is designing a three-throw dice game to play on a computer[cite: 1]. The program requirements are:
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.5; color: #431407; margin-bottom: 10px; padding-left: 20px;">
+              <li>A roll of the dice is a random number between 1 and 6[cite: 1].</li>
+              <li>The dice is rolled three times[cite: 1].</li>
+              <li>The numbers rolled are added to a subtotal[cite: 1].</li>
+              <li>The final score is calculated by multiplying the subtotal by a booster value[cite: 1].</li>
+              <li>The booster value starts at 1[cite: 1].</li>
+              <li>Each time a 3 or 6 is rolled, the booster value is incremented by 1[cite: 1].</li>
+              <li>The game outputs the value of each roll, and the final score[cite: 1].</li>
+            </ul>
+            <p style="font-size: 0.85rem; color: #7c2d12; margin: 0; font-style: italic;">
+              Task: Open <code>Q04c</code> in the code editor. Write the code to create this program. You must use the layout, variables, and constants given in <code>Q04c</code>[cite: 1]. Save as <code>Q04cFINISHED</code>[cite: 1].
+            </p>
+          </div>
+
+          <!-- GIVEN CODE SKELETON DISPLAY -->
+          <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; padding: 12px; border-radius: 4px; margin-bottom: 15px;">
+            <h4 style="margin-top: 0; color: #334155; font-size: 0.95rem;">💻 What the Starter File (Q04c.py) Looks Like:</h4>
+            <pre style="background: #1e293b; color: #f8fafc; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 0.82rem; line-height: 1.4; overflow-x: auto; margin: 0;">
+# Q04c
+
+# import libraries
+import random
+
+# program constants
+SIDES = 6
+THROWS = 3
+
+# complete the lines to initialise the variables
+roll =
+subtotal = 
+booster =
+finalScore =
+
+# roll dice 3 times
+
+    # display number rolled
+    
+    # update subtotal
+    
+    # check for roll of 3 or 6 and increment booster if needed
+
+# calculate and output final score
+            </pre>
+          </div>
+
+          <!-- APPROACH GUIDE -->
+          <div style="background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 12px 15px; margin-bottom: 15px; border-radius: 0 4px 4px 0;">
+            <h4 style="margin: 0 0 6px 0; color: #14532d; font-size: 0.95rem;">🧠 How to Approach Question 04(c):</h4>
+            <ol style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #166534; line-height: 1.5;">
+              <li><strong>Initialisation:</strong> Look at the rules. <code>booster</code> must start at <code>1</code>[cite: 1], while <code>roll</code>, <code>subtotal</code>, and <code>finalScore</code> start at <code>0</code>.</li>
+              <li><strong>Iteration:</strong> Use a count-controlled loop: <code>for i in range(THROWS):</code>[cite: 1].</li>
+              <li><strong>Indentation:</strong> Every action inside the loop (generating roll, printing roll, updating subtotal, checking selection) must be indented by 4 spaces.</li>
+              <li><strong>Compound Condition:</strong> Check if a 3 or 6 is rolled using <code>if roll == 3 or roll == 6:</code>[cite: 1].</li>
+              <li><strong>Final Calculation:</strong> Perform <code>finalScore = subtotal * booster</code> outside (after) the loop body[cite: 1].</li>
+            </ol>
+          </div>
+
+          <!-- INTERACTIVE PARSONS TASK 1 -->
+          <h4 style="color: #0f172a; margin-bottom: 8px;">🧩 Interactive Practice: Assemble the Parsons Code Blocks</h4>
+          <p style="font-size: 0.85rem; color: #64748b; margin-bottom: 10px;">
+            Click or drag blocks from the left panel into the right box in the correct sequence.
+          </p>
+
+          <table style="width: 100%; border-collapse: collapse; margin-bottom: 12px;">
+            <tr>
+              <td style="width: 48%; vertical-align: top; background: #f1f5f9; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
+                <h5 style="margin: 0 0 8px 0; font-size: 0.85rem; color: #334155; text-align: center;">📦 Available Code Blocks</h5>
+                <div id="source-blocks-q4" style="min-height: 380px;">
+                  <div class="parsons-item-q4" draggable="true" data-id="1" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    import random
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="2" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    SIDES = 6<br>THROWS = 3
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="3" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    roll = 0<br>subtotal = 0<br>booster = 1<br>finalScore = 0
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="4" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    for i in range(THROWS):
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="5" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;roll = random.randint(1, SIDES)<br>&nbsp;&nbsp;&nbsp;&nbsp;print("Rolled:", roll)
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="6" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;subtotal = subtotal + roll
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="7" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;if roll == 3 or roll == 6:
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="8" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booster = booster + 1
+                  </div>
+                  <div class="parsons-item-q4" draggable="true" data-id="9" style="background: #fff; padding: 6px 10px; margin-bottom: 5px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.82rem; cursor: move;">
+                    finalScore = subtotal * booster<br>print("Score", finalScore)
+                  </div>
+                </div>
+              </td>
+              <td style="width: 4%;"></td>
+              <td style="width: 48%; vertical-align: top; background: #e2e8f0; padding: 10px; border-radius: 6px; border: 2px dashed #64748b;">
+                <h5 style="margin: 0 0 8px 0; font-size: 0.85rem; color: #334155; text-align: center;">🎯 Your Solution Sequence</h5>
+                <div id="target-blocks-q4" style="min-height: 380px; background: #ffffff; border-radius: 4px; padding: 6px;"></div>
+              </td>
+            </tr>
+          </table>
+
+          <div>
+            <button onclick="checkParsonsQ4()" style="background-color: #007BA6; color: white; border: none; padding: 8px 14px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer;">
+              Check Sequence
+            </button>
+            <button onclick="resetParsonsQ4()" style="background-color: #64748b; color: white; border: none; padding: 8px 14px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer; margin-left: 8px;">
+              Reset Activity
+            </button>
+          </div>
+
+          <div id="parsons-feedback-q4" style="display: none; padding: 10px; border-radius: 6px; font-size: 0.85rem; font-weight: bold; margin-top: 12px;"></div>
         </div>
 
-        <div id="parsons-feedback-q4" style="display: none; padding: 12px; border-radius: 6px; font-size: 0.88rem; font-weight: bold; margin-bottom: 25px;"></div>
+        <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 30px 0;">
 
-        <!-- ACTIVITY 2: Q02cii CODE COMPLETION (INPUT CASTING & SUBPROGRAM CALL) -->
-        <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 30px;">
-          ⚙️ Task 2: Q02cii Input Casting, Range Check & Subprogram Call
-        </h2>
-        <p style="font-size: 0.9rem; color: #475569;">
-          Complete the missing line segments directly in the code skeleton below.
-        </p>
-
-        <!-- CODE COMPLETION SKELETON FORM -->
-        <div style="background-color: #1e293b; color: #f8fafc; padding: 18px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; line-height: 1.8; margin-bottom: 15px;">
-          <span style="color: #64748b;"># Q02cii Hexadecimal Converter Code Completion</span><br>
-          <span style="color: #38bdf8;">HEXDIV</span> = 16<br>
-          userInput = 0<br><br>
-
-          <span style="color: #64748b;"># Subprograms defined above: getLetter(hexDigit) and getHex(denaryValue)</span><br><br>
-
-          <span style="color: #64748b;"># 1. Complete line to convert input to integer:</span><br>
-          userInput = <input type="text" id="q2-input1" placeholder="e.g. int" style="width: 70px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">(input("please enter a number between 0 and 255 \n"))<br><br>
-
-          <span style="color: #64748b;"># 2. Complete test to check input is between 0 and 255:</span><br>
-          <span style="color: #f43f5e;">if</span> (<input type="text" id="q2-input2" placeholder="e.g. userInput >= 0" style="width: 170px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">) <input type="text" id="q2-input3" placeholder="e.g. and userInput <= 255" style="width: 190px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">:<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #64748b;"># 3. Complete line to call getHex subprogram:</span><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;print(<input type="text" id="q2-input4" placeholder="e.g. getHex(userInput)" style="width: 180px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">)<br>
-          <span style="color: #f43f5e;">else</span>:<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;print("number out of range")
-        </div>
-
+        <!-- SECTION 2: QUESTION 2(C)(II) WALKTHROUGH -->
         <div>
-          <button onclick="checkQ2()" style="background-color: #007BA6; color: white; border: none; padding: 9px 16px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer;">
-            Verify Inputs
-          </button>
-        </div>
+          <h2 style="color: #1e293b; background: #e2e8f0; padding: 8px 12px; border-radius: 4px; font-size: 1.2rem; margin-top: 0;">
+            📌 Section 2: Question 02(c)(ii) — Subprogram Calling & Validation
+          </h2>
 
-        <div id="q2-feedback" style="display: none; padding: 12px; border-radius: 6px; font-size: 0.88rem; margin-top: 15px; margin-bottom: 20px;"></div>
+          <!-- EXAM QUESTION DISPLAY BOX -->
+          <div style="background-color: #fff8f1; border: 1px solid #f97316; border-left: 5px solid #ea580c; padding: 15px; border-radius: 4px; margin-bottom: 15px;">
+            <h3 style="margin-top: 0; color: #9a3412; font-size: 1rem;">📄 Actual Exam Question Specification: Question 02(c)(ii)[cite: 1]</h3>
+            <p style="font-size: 0.9rem; line-height: 1.5; color: #431407; margin-bottom: 8px;">
+              A program converts denary values in the range 0 to 255 into hexadecimal[cite: 1]. Open <code>Q02cii</code> in the code editor[cite: 1]. Amend the code to complete the program to:
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.5; color: #431407; margin-bottom: 10px; padding-left: 20px;">
+              <li>Convert the user input to integer[cite: 1].</li>
+              <li>Check the input is between 0 and 255[cite: 1].</li>
+              <li>Call the <code>getHex</code> subprogram, with the user input as an argument[cite: 1].</li>
+            </ul>
+            <p style="font-size: 0.85rem; color: #7c2d12; margin: 0; font-style: italic;">
+              Do not add any further functionality[cite: 1]. Save your code as <code>Q02ciiFINISHED</code>[cite: 1].
+            </p>
+          </div>
 
-        <!-- FULL SOLUTION ACCORDION -->
-        <details style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 12px; margin-top: 20px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #0f172a; font-size: 0.95rem;">
-            🔍 View Completed Solution Code (Q02cii)
-          </summary>
-          <div style="margin-top: 10px;">
-            <pre style="background: #1e293b; color: #f8fafc; padding: 12px; border-radius: 6px; overflow-x: auto; font-family: monospace; font-size: 0.85rem; line-height: 1.4;">
-# Q02cii - Complete Python Solution
+          <!-- GIVEN CODE SKELETON DISPLAY -->
+          <div style="background-color: #f8fafc; border: 1px solid #cbd5e1; padding: 12px; border-radius: 4px; margin-bottom: 15px;">
+            <h4 style="margin-top: 0; color: #334155; font-size: 0.95rem;">💻 What the Starter File (Q02cii.py) Looks Like:</h4>
+            <pre style="background: #1e293b; color: #f8fafc; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 0.82rem; line-height: 1.4; overflow-x: auto; margin: 0;">
+# Q02cii
 
+# program CONSTANTS
 HEXDIV = 16
+
+# program variables
 userInput = 0
 
+# subprogram to get hex letter
 def getLetter(hexDigit):
+    hexLetter = ""
     if hexDigit == 10:
-        return "A"
+        hexLetter = "A"
     elif hexDigit == 11:
-        return "B"
+        hexLetter = "B"
     elif hexDigit == 12:
-        return "C"
+        hexLetter = "C"
     elif hexDigit == 13:
-        return "D"
+        hexLetter = "D"
     elif hexDigit == 14:
-        return "E"
+        hexLetter = "E"
     elif hexDigit == 15:
-        return "F"
+        hexLetter = "F"
     else:
-        return str(hexDigit)
+        hexLetter=str(hexDigit)
+    return hexLetter
 
+# subprogram to create 8-bit binary value
 def getHex(denaryValue):
+    hexResult = ""
     hexFirst = denaryValue // HEXDIV
     hexSecond = denaryValue % HEXDIV
-    return getLetter(hexFirst) + getLetter(hexSecond)
+    hexResult = getLetter(hexFirst) + getLetter(hexSecond)
+    return hexResult
 
-# Complete conversion to integer
-userInput = int(input("please enter a number between 0 and 255 \n"))
+# complete the line to convert the user input to integer
+userInput =         (input("please enter a number between 0 and 255 \n"))
 
-# Complete test for range 0 to 255
-if userInput >= 0 and userInput <= 255:
-    # Call getHex with userInput argument
-    print(getHex(userInput))
+# complete the test to check the input is between 0 and 255
+if (          )    (          ):
+    # complete the line to call getHex subprogram
+    print(          )
 else:
     print("number out of range")
             </pre>
           </div>
-        </details>
+
+          <!-- APPROACH GUIDE -->
+          <div style="background-color: #f0fdf4; border-left: 4px solid #16a34a; padding: 12px 15px; margin-bottom: 15px; border-radius: 0 4px 4px 0;">
+            <h4 style="margin: 0 0 6px 0; color: #14532d; font-size: 0.95rem;">🧠 How to Approach Question 02(c)(ii):</h4>
+            <ol style="margin: 0; padding-left: 20px; font-size: 0.88rem; color: #166534; line-height: 1.5;">
+              <li><strong>Integer Casting:</strong> Standard keyboard input returns string data. Wrap <code>input(...)</code> with the <code>int()</code> function[cite: 1].</li>
+              <li><strong>Boundary Validation:</strong> Test both lower and upper limits using relational operators and <code>and</code>: <code>userInput >= 0 and userInput <= 255</code>[cite: 1].</li>
+              <li><strong>Subprogram Execution:</strong> Pass <code>userInput</code> inside the brackets of <code>getHex(...)</code>[cite: 1] within the <code>print()</code> statement.</li>
+            </ol>
+          </div>
+
+          <!-- INTERACTIVE CODE COMPLETION TASK 2 -->
+          <h4 style="color: #0f172a; margin-bottom: 8px;">⚙️ Interactive Practice: Fill in the Missing Code Segments</h4>
+          <div style="background-color: #1e293b; color: #f8fafc; padding: 15px; border-radius: 6px; font-family: monospace; font-size: 0.82rem; line-height: 1.8; margin-bottom: 12px;">
+            <span style="color: #64748b;"># Complete the line to convert the user input to integer</span><br>
+            userInput = <input type="text" id="q2-input1" placeholder="e.g. int" style="width: 70px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">(input("please enter a number between 0 and 255 \n"))<br><br>
+
+            <span style="color: #64748b;"># Complete the test to check the input is between 0 and 255</span><br>
+            <span style="color: #f43f5e;">if</span> (<input type="text" id="q2-input2" placeholder="e.g. userInput >= 0" style="width: 160px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">) <input type="text" id="q2-input3" placeholder="e.g. and userInput <= 255" style="width: 180px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #64748b;"># Complete the line to call getHex subprogram</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print(<input type="text" id="q2-input4" placeholder="e.g. getHex(userInput)" style="width: 180px; background: #0f172a; color: #38bdf8; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-family: monospace;">)<br>
+            <span style="color: #f43f5e;">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;print("number out of range")
+          </div>
+
+          <div>
+            <button onclick="checkQ2()" style="background-color: #007BA6; color: white; border: none; padding: 8px 14px; font-size: 0.85rem; font-weight: bold; border-radius: 4px; cursor: pointer;">
+              Verify Inputs
+            </button>
+          </div>
+
+          <div id="q2-feedback" style="display: none; padding: 10px; border-radius: 6px; font-size: 0.85rem; margin-top: 12px;"></div>
+        </div>
 
       </td>
     </tr>
   </table>
 
-  <!-- INTERACTIVE LOGIC SCRIPT -->
+  <!-- INTERACTIVE SCRIPTS -->
   <script>
     // TASK 1: PARSONS INTERACTION
     const sourceQ4 = document.getElementById('source-blocks-q4');
@@ -301,7 +387,7 @@ else:
         feedback.style.backgroundColor = '#dcfce7';
         feedback.style.color = '#15803d';
         feedback.style.border = '1px solid #86efac';
-        feedback.innerHTML = '🎉 Perfect! All 9 blocks, including libraries, constants, initialisers, and loops, are ordered correctly!';
+        feedback.innerHTML = '🎉 Excellent! All 9 blocks, including libraries, constants, initialisers, and loops, are ordered correctly!';
       } else {
         feedback.style.backgroundColor = '#fee2e2';
         feedback.style.color = '#b91c1c';
@@ -328,7 +414,7 @@ else:
       let errors = [];
 
       if (input1 !== 'int') {
-        errors.push("Line 1: Use <code>int</code> to cast input to an integer.");
+        errors.push("Line 1: Use <code>int</code> to convert user input to an integer.");
       }
       
       const combinedIf = (input2 + " " + input3).replace(/\s+/g, ' ');
@@ -337,7 +423,7 @@ else:
       }
 
       if (input4 !== 'getHex(userInput)') {
-        errors.push("Line 3: Call subprogram using <code>getHex(userInput)</code> as the argument inside <code>print()</code>.");
+        errors.push("Line 3: Call the subprogram using <code>getHex(userInput)</code> as the argument inside <code>print()</code>.");
       }
 
       feedback.style.display = 'block';
@@ -345,292 +431,13 @@ else:
         feedback.style.backgroundColor = '#dcfce7';
         feedback.style.color = '#15803d';
         feedback.style.border = '1px solid #86efac';
-        feedback.innerHTML = '🎉 Excellent! All inputs match the Python exam requirements perfectly!';
+        feedback.innerHTML = '🎉 Excellent! All code segments match the Python exam requirements perfectly!';
       } else {
         feedback.style.backgroundColor = '#fee2e2';
         feedback.style.color = '#b91c1c';
         feedback.style.border = '1px solid #fca5a5';
-        feedback.innerHTML = '<strong>Fix the following issues:</strong><br>' + errors.join('<br>');
+        feedback.innerHTML = '<strong>Please correct the following:</strong><br>' + errors.join('<br>');
       }
-    }
-  </script>
-
-</body>
-</html>
-      <!-- LEFT COLUMN: PERSISTENT MEMORY SCAFFOLD (280px) -->
-      <td style="width: 280px; min-width: 280px; background-color: #f1f3f5; padding: 15px; border-right: 2px solid #dee2e6;">
-        
-        <h3 style="margin-top: 0; color: #1a202c; font-size: 1.1rem; border-bottom: 2px solid #cbd5e1; padding-bottom: 8px;">
-          🧠 Memory Scaffold
-        </h3>
-        <p style="font-size: 0.85rem; color: #475569; margin-bottom: 15px;">
-          Expand accordion panels below for essential Python exam concepts and strategies.
-        </p>
-
-        <!-- ACCORDION 1: Variables & Constants -->
-        <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
-            📌 Variables vs Constants
-          </summary>
-          <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong>Variables:</strong> Can change while program runs.</p>
-            <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #3b82f6;"><code>count = 0</code><br><code>score = score + 10</code></p>
-            <p style="margin: 4px 0;"><strong>Constants:</strong> Fixed values, written in ALL_CAPS by convention.</p>
-            <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #10b981;"><code>SIDES = 6</code><br><code>THROWS = 3</code></p>
-          </div>
-        </details>
-
-        <!-- ACCORDION 2: Selection & Logic -->
-        <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
-            🔀 Selection & Logic
-          </summary>
-          <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong><code>if / elif / else</code></strong> controls execution flow.</p>
-            <p style="margin: 4px 0;"><strong>Logical Operators:</strong></p>
-            <ul style="padding-left: 18px; margin: 4px 0;">
-              <li><code>or</code>: True if at least one condition is True.</li>
-              <li><code>and</code>: True only if ALL conditions are True.</li>
-              <li><code>==</code>: Checks equality.</li>
-            </ul>
-            <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #8b5cf6;">
-              <code>if roll == 3 or roll == 6:</code><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;<code>booster += 1</code>
-            </p>
-          </div>
-        </details>
-
-        <!-- ACCORDION 3: Loop Iteration -->
-        <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
-            🔁 Loop Constructs
-          </summary>
-          <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <p style="margin: 4px 0;"><strong><code>for i in range(n)</code></strong> repeats code <code>n</code> times.</p>
-            <p style="margin: 4px 0; background: #f8fafc; padding: 4px; border-left: 3px solid #f59e0b;">
-              <code>for i in range(THROWS):</code><br>
-              &nbsp;&nbsp;&nbsp;&nbsp;<code>roll = random.randint(1, SIDES)</code>
-            </p>
-            <p style="margin: 4px 0;"><strong>Indentation Note:</strong> Python requires 4 spaces for block body execution!</p>
-          </div>
-        </details>
-
-        <!-- ACCORDION 4: 4-Step Parsons Strategy -->
-        <details style="margin-bottom: 10px; background-color: #ffffff; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 10px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #1e293b; font-size: 0.9rem;">
-            🎯 Parsons Solution Strategy
-          </summary>
-          <div style="font-size: 0.82rem; color: #334155; margin-top: 8px; line-height: 1.4;">
-            <ol style="padding-left: 18px; margin: 4px 0;">
-              <li><strong>Identify Setup:</strong> Spot imports, constants, and initial values.</li>
-              <li><strong>Locate Repeats:</strong> Look for <code>for</code> or <code>while</code> loops.</li>
-              <li><strong>Check Indentation:</strong> Move statements inside loop blocks.</li>
-              <li><strong>Outputs:</strong> Ensure calculation precedes <code>print()</code>.</li>
-            </ol>
-          </div>
-        </details>
-
-      </td>
-
-      <!-- RIGHT COLUMN: MAIN CONTENT AREA -->
-      <td style="padding: 20px;">
-
-        <!-- AI ACTIVITY STRAND BADGE & CALLOUT (ENHANCE - SUPPORT BLUE) -->
-        <div style="border: 2px solid #007BA6; background-color: #eef7fa; border-radius: 8px; padding: 15px; margin-bottom: 25px;">
-          <table style="width: 100%; border-collapse: collapse; border: none;">
-            <tr style="vertical-align: middle;">
-              <td style="width: 140px; padding-right: 15px;">
-                <img src="https://lh3.googleusercontent.com/d/1inI2pCLZ_pb0orhwcBeAN73oqpEfvagH" alt="ENHANCE AI Strand Badge" style="width: 130px; height: auto; display: block;">
-              </td>
-              <td>
-                <h2 style="margin: 0 0 5px 0; color: #007BA6; font-size: 1.25rem;">AI Activity Strand: ENHANCE (AI Supported)</h2>
-                <p style="margin: 0; font-size: 0.9rem; color: #004d66; line-height: 1.4;">
-                  <strong>Student Task Guidance:</strong> Use AI as a scaffold and interactive partner to understand Parsons construction, trace variable states, and verify code assembly steps.
-                </p>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <!-- SECTION 1: EXAM TASK CONTEXT & TUTORIAL -->
-        <h2 style="color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 6px; margin-top: 0;">
-          📝 Exam Question Walkthrough: Question 04c Dice Game
-        </h2>
-        <p style="font-size: 0.95rem; color: #334155; line-height: 1.5;">
-          In your Python practical exam, you are often given incomplete code skeletons or Parsons blocks to arrange. Let's look at the problem requirements for <strong>Question 04c</strong>:
-        </p>
-
-        <!-- QUESTION SPECIFICATION BOX -->
-        <div style="background-color: #f8fafc; border-left: 4px solid #3b82f6; padding: 12px 15px; border-radius: 0 6px 6px 0; margin-bottom: 20px;">
-          <h4 style="margin: 0 0 8px 0; color: #1e3a8a; font-size: 1rem;">📋 Game Rules & Requirements:</h4>
-          <ul style="margin: 0; padding-left: 20px; font-size: 0.9rem; color: #334155; line-height: 1.5;">
-            <li>The dice is rolled <strong>3 times</strong> (using constant <code>THROWS = 3</code>).</li>
-            <li>Each roll is a random number between 1 and 6 (using <code>SIDES = 6</code>).</li>
-            <li>Roll values are accumulated into <code>subtotal</code>.</li>
-            <li><code>booster</code> starts at <strong>1</strong>. Each time a <strong>3 or 6</strong> is rolled, <code>booster</code> increases by 1.</li>
-            <li><code>finalScore</code> equals <code>subtotal * booster</code>.</li>
-          </ul>
-        </div>
-
-        <!-- SECTION 2: PARSONS PROBLEM INTERACTIVE ASSEMBLY -->
-        <h3 style="color: #0f172a; margin-top: 25px;">🧩 Interactive Parsons Challenge: Construct Q04c</h3>
-        <p style="font-size: 0.9rem; color: #475569;">
-          Click or drag code snippets from the left library into the correctly ordered right assembly panel.
-        </p>
-
-        <!-- PARSONS DRAG & DROP CONTAINER -->
-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
-          <tr>
-            <td style="width: 48%; vertical-align: top; background: #f1f5f9; padding: 10px; border-radius: 6px; border: 1px solid #cbd5e1;">
-              <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #334155; text-align: center;">📦 Available Code Blocks</h4>
-              <div id="source-blocks" style="min-height: 320px;">
-                <div class="parsons-item" draggable="true" data-id="1" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  roll = 0<br>subtotal = 0<br>booster = 1<br>finalScore = 0
-                </div>
-                <div class="parsons-item" draggable="true" data-id="2" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  for i in range(THROWS):
-                </div>
-                <div class="parsons-item" draggable="true" data-id="3" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;roll = random.randint(1, SIDES)
-                </div>
-                <div class="parsons-item" draggable="true" data-id="4" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;print("Rolled:", roll)
-                </div>
-                <div class="parsons-item" draggable="true" data-id="5" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;subtotal = subtotal + roll
-                </div>
-                <div class="parsons-item" draggable="true" data-id="6" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;if roll == 3 or roll == 6:
-                </div>
-                <div class="parsons-item" draggable="true" data-id="7" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;booster = booster + 1
-                </div>
-                <div class="parsons-item" draggable="true" data-id="8" style="background: #fff; padding: 8px 12px; margin-bottom: 6px; border: 1px solid #94a3b8; border-radius: 4px; font-family: monospace; font-size: 0.85rem; cursor: move;">
-                  finalScore = subtotal * booster<br>print("Score", finalScore)
-                </div>
-              </div>
-            </td>
-            <td style="width: 4%;"></td>
-            <td style="width: 48%; vertical-align: top; background: #e2e8f0; padding: 10px; border-radius: 6px; border: 2px dashed #64748b;">
-              <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #334155; text-align: center;">🎯 Your Solution Sequence</h4>
-              <div id="target-blocks" style="min-height: 320px; background: #ffffff; border-radius: 4px; padding: 8px;"></div>
-            </td>
-          </tr>
-        </table>
-
-        <!-- BUTTON CONTROLS -->
-        <div style="margin-bottom: 20px;">
-          <button onclick="checkParsons()" style="background-color: #007BA6; color: white; border: none; padding: 10px 18px; font-size: 0.9rem; font-weight: bold; border-radius: 4px; cursor: pointer;">
-            Check Solution
-          </button>
-          <button onclick="resetParsons()" style="background-color: #64748b; color: white; border: none; padding: 10px 18px; font-size: 0.9rem; font-weight: bold; border-radius: 4px; cursor: pointer; margin-left: 10px;">
-            Reset Blocks
-          </button>
-        </div>
-
-        <div id="parsons-feedback" style="display: none; padding: 12px; border-radius: 6px; font-size: 0.9rem; font-weight: bold; margin-bottom: 20px;"></div>
-
-        <!-- SECTION 3: FULL COMPLETED CODE & EXPLANATION -->
-        <details style="background-color: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 12px; margin-top: 20px;">
-          <summary style="font-weight: bold; cursor: pointer; color: #0f172a; font-size: 0.95rem;">
-            🔍 View Completed Python Solution (Q04c Model Answer)
-          </summary>
-          <div style="margin-top: 10px;">
-            <pre style="background: #1e293b; color: #f8fafc; padding: 12px; border-radius: 6px; overflow-x: auto; font-family: monospace; font-size: 0.85rem; line-height: 1.4;">
-# Q04c - Model Python Solution
-
-import random
-
-# Program constants
-SIDES = 6
-THROWS = 3
-
-# Initialise variables
-roll = 0
-subtotal = 0
-booster = 1
-finalScore = 0
-
-# Roll dice 3 times
-for i in range(THROWS):
-    # Display number rolled
-    roll = random.randint(1, SIDES)
-    print("Rolled:", roll)
-    
-    # Update subtotal
-    subtotal = subtotal + roll
-    
-    # Check for roll of 3 or 6 and increment booster if needed
-    if roll == 3 or roll == 6:
-        booster = booster + 1
-
-# Calculate and output final score
-finalScore = subtotal * booster
-print("Score", finalScore)
-            </pre>
-          </div>
-        </details>
-
-      </td>
-    </tr>
-  </table>
-
-  <!-- INTERACTIVE PARSONS DRAG AND DROP SCRIPT -->
-  <script>
-    const sourceContainer = document.getElementById('source-blocks');
-    const targetContainer = document.getElementById('target-blocks');
-
-    // Drag and drop event wiring
-    document.querySelectorAll('.parsons-item').forEach(item => {
-      item.addEventListener('dragstart', (e) => {
-        e.dataTransfer.setData('text/plain', item.dataset.id);
-      });
-      item.addEventListener('click', () => {
-        if (item.parentElement === sourceContainer) {
-          targetContainer.appendChild(item);
-        } else {
-          sourceContainer.appendChild(item);
-        }
-      });
-    });
-
-    targetContainer.addEventListener('dragover', (e) => {
-      e.preventDefault();
-    });
-
-    targetContainer.addEventListener('drop', (e) => {
-      e.preventDefault();
-      const id = e.dataTransfer.getData('text/plain');
-      const draggedElement = document.querySelector(`[data-id='${id}']`);
-      if (draggedElement) {
-        targetContainer.appendChild(draggedElement);
-      }
-    });
-
-    function checkParsons() {
-      const currentOrder = Array.from(targetContainer.children).map(el => el.dataset.id);
-      const correctOrder = ["1", "2", "3", "4", "5", "6", "7", "8"];
-      const feedback = document.getElementById('parsons-feedback');
-      
-      feedback.style.display = 'block';
-      if (JSON.stringify(currentOrder) === JSON.stringify(correctOrder)) {
-        feedback.style.backgroundColor = '#dcfce7';
-        feedback.style.color = '#15803d';
-        feedback.style.border = '1px solid #86efac';
-        feedback.innerHTML = '🎉 Excellent! Your code block sequence and logic match the solution criteria perfectly!';
-      } else {
-        feedback.style.backgroundColor = '#fee2e2';
-        feedback.style.color = '#b91c1c';
-        feedback.style.border = '1px solid #fca5a5';
-        feedback.innerHTML = '❌ Sequence inaccurate. Remember to initialise variables first, place loop actions indented inside the loop, and calculate finalScore at the end.';
-      }
-    }
-
-    function resetParsons() {
-      const items = Array.from(document.querySelectorAll('.parsons-item'));
-      items.sort(() => Math.random() - 0.5);
-      items.forEach(item => sourceContainer.appendChild(item));
-      document.getElementById('parsons-feedback').style.display = 'none';
     }
   </script>
 
